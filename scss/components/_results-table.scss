@@ -1,0 +1,94 @@
+
+// Results table
+/*table results*/
+
+.results-table {
+
+	.results-table__head {
+		padding: 6px 0 4px;
+		font-size: 12px;
+		color: #3f51b5;
+		border-bottom: solid 1px rgba(0, 0, 0, 0.16);
+	}
+
+	.results-table__row {
+		display: flex;
+		padding: 3px 0;
+	}
+
+	.results-table__col {
+		text-align: center;
+		width: 80px;
+	}
+
+	.results-table__col:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	.results-table__col.bib {
+		width: 48px;
+	}
+
+	.results-table__col.name {
+		text-align: left;
+		width: 164px;
+	}
+
+	.results-table__col.category {
+		color: #535353;
+	}
+
+	.results-table__input {
+		padding: 2px 4px;
+		width: 100%;
+		height: 24px;
+		border: solid 1px rgba(0, 0, 0, 0.3);
+	}
+
+	.results-table__col.place {
+		.results-table__span {
+			font-size: 10px;
+			color: rgba(0, 0, 0, 0.7);
+		}
+
+		.results-table__span:not(:last-child) {
+			border-right: 1px solid rgba(0, 0, 0, 0.7);
+			padding-right: 3px;
+		}
+	}
+
+	.results-table__body {
+		.results-table__row{
+			padding: 7px 0 14px;
+			font-size: 12px;
+			color: #535353;
+			cursor: pointer;
+		}
+
+		.results-table__row:nth-child(4n-1){
+			background: rgba(0, 0, 0, 0.05);
+		}
+	}
+
+	.results-table__col--bottom{
+		font-size: 10px;
+		color: rgba(0, 0, 0, 0.7);
+	}
+
+	@include media-breakpoint-down(md) {
+
+		.results-table__col.sport, .results-table__col.category{
+			display: none;
+		}
+		.results-table__col{
+			flex-grow: 1;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		
+		.results-table__col.split {
+			display: none;
+		}
+	}
+}

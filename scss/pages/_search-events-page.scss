@@ -1,0 +1,112 @@
+body.search-events main {
+	position: relative;
+
+	section.search-events-results {
+
+		article.competition-card,
+		.advertising-wrap {
+			margin-bottom: 16px;
+		}
+
+		.not-found {
+			width: 100%;
+			height: 334px;
+			margin-bottom: 16px;
+			text-align: center;
+			display: none;
+
+			span {
+				font-size: 15px;
+				line-height: 18px;
+				font-weight: 400;
+				color: $black-70;
+				display: inline-block;
+				margin-top: 24px;
+			}
+
+			button {
+				padding: 0;
+				background-color: transparent;
+				border: none;
+				margin-top: 34.7px;
+				display: inline-block;
+
+				svg {
+					width: 166.7px;
+
+					path {
+						transition: .3s;
+					}
+				}
+
+				&:hover {
+					svg path {
+						fill-opacity: 1;
+					}
+				}
+			}
+		}
+	}
+
+	button.open-filter {
+		position: fixed;
+		right: 30px;
+		top: 200px;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		text-align: center;
+		background-color: $indigo;
+		border: none;
+		box-shadow: 0 0 8px rgba(#000, .12), 0 0 8px rgba(#000, .24);
+		z-index: 100;
+		cursor: pointer;
+
+		svg {
+			width: 24px;
+			line-height: 48px;
+			vertical-align: middle;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

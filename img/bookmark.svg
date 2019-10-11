@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-10.4%" y="-8.3%" width="120.8%" height="120.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="desktop-1440" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="event/info/normal" transform="translate(-982.000000, -379.000000)">
+            <g id="participants---with-user" transform="translate(733.000000, 341.000000)">
+                <g id="ic_bookmark" filter="url(#filter-1)" transform="translate(252.000000, 40.000000)">
+                    <g id="Icon-24px">
+                        <polygon id="Shape" points="0 0 48 0 48 48 0 48"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

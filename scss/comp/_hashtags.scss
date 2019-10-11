@@ -1,0 +1,21 @@
+
+.hashtags {
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        color: $french-blue;
+        text-decoration: none;
+        font-weight: 400;
+      }
+
+      &:not(:first-child) {
+        margin-left: 2px;
+      }
+    }
+  }
+}

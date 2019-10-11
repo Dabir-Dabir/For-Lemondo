@@ -1,0 +1,163 @@
+.home-page main {
+	section h3.section-title {
+		font-size: 32px;
+		font-weight: 300;
+		line-height: 38px;
+		margin-bottom: 8px;
+
+		@include media-breakpoint-down(md) {
+			font-size: 18px;
+			line-height: 21px;
+		}
+	}
+
+	section.short-about-us {
+		border: none;
+		margin-bottom: 16px;
+
+		@include media-breakpoint-down(md) {
+			margin-bottom: 0;
+		}
+	}
+
+	section.popular-races {
+
+		.search-competition {
+			@include box-shadow(0, 1px, 3px, 0, $black-50);
+
+			a {
+				font-size: 15px;
+				padding-right: 30px;
+				display: block;
+				background-color: $orange-red;
+				width: 100%;
+				height: 76px;
+				color: #fff;
+				font-weight: 900;
+				margin-top: 6px;
+				line-height: 76px;
+				text-align: center;
+				vertical-align: middle;
+				text-decoration: none;
+				transition: .3s;
+
+				i {
+					font-size: 25px;
+					vertical-align: middle;
+					line-height: 25px;
+					margin-right: 20px;
+				}
+			}
+		}
+
+		.event-minibox, .search-competition {
+
+			&:hover {
+				box-shadow: 0 0 6px rgba(#000, .15), 0 6px 6px rgba(#000, .3);		
+			}
+		}
+
+		@include media-breakpoint-up(lg) {
+
+			.search-competition {
+				a {
+					font-size: 20px;
+
+					i {
+						font-size: 35px;
+						line-height: 35px;
+					}
+				}
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			.col-md-4 {
+				display: table;
+				margin-top: 8px;
+
+				& > * {
+					margin: 0;
+					overflow: hidden;
+				}
+
+				.search-competition a {
+					margin-top: 0;
+				}
+
+			}
+		}
+	}
+
+	.advertising-wrap {
+		margin-top: 24px;
+	}
+
+	section.sport-categories {
+		margin-top: 11px;
+	}
+
+	section.last-reviews {
+		margin-top: 16px;
+	}
+
+	section.official-results {
+		margin-top: 16px;
+
+		.results-carousel {
+			margin-top: -10px;
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+
+		section.sport-categories {
+
+			#sport-categories-slider {
+				padding: 0;
+			}
+		}
+
+		section.last-reviews {
+
+			article.review:not(:first-of-type) {
+				margin-top: 8px;
+				margin-bottom: 8px;
+			}
+		}
+
+		section.official-results {
+
+			.results-carousel {
+				padding: 0;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

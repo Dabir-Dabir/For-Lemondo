@@ -1,0 +1,320 @@
+body.profile {
+	section.content-header {
+		margin-bottom: 18px;
+
+		.left {
+			position: relative;
+			width: 116px;
+			height: 116px;
+			border-radius: 50%;
+			overflow: hidden;
+			float: left;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.right {
+			position: relative;
+			float: left;
+			margin-left: 16px;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 1.2;
+
+			h1.name {
+				font-size: 32px;
+				font-weight: 300;
+				margin: 0;
+			}
+
+			a.change-password-link {
+				font-size: 12px;
+				display: block;
+			}
+
+			.place {
+				margin-top: 8px;
+
+				img {
+					width: 28px;
+					display: inline-block;
+				}
+			}
+
+			.age {
+				margin-top: 8px;
+			}
+
+			.categories {
+				margin-top: 8px;
+			}
+		}
+
+		@include media-breakpoint-down(md) {
+			.left {
+				width: 70px;
+				height: 70px;
+			}
+
+			.right {
+				font-size: 14px;
+				width: calc(100% - 86px);
+
+				h1.name {
+					font-size: 20px;
+					font-weight: 400;
+				}
+
+				a.change-password-link {
+					font-size: 11px;
+				}
+
+				.place {
+
+					img {
+						width: 23px;
+						display: inline-block;
+					}
+				}
+
+				.age {
+					margin-top: 4px;
+				}
+
+				.categories {
+					margin-top: 4px;
+				}
+			}
+		}
+	}
+
+	.left-content {
+		.fast .percentage .help .help-text {
+			width: 68px;
+			height: 30px;
+			bottom: 23px;
+		}
+
+		.event-card .right .time .info .info-text {
+			width: 85px;
+			height: 30px;
+			bottom: 23px;
+		}
+
+		section#results-tab {
+
+			.event_card-result,
+			.bp-card {
+				margin-bottom: 16px;
+			}
+
+			section.new-results-section {
+				.results-enter {
+					margin-top: 6px;
+				}
+			}
+		}
+
+		section#calendar-tab {
+			h3.section-title {
+				margin-top: 8px;
+			}
+
+			.event-card {
+				margin-bottom: 8px;
+			}
+
+			.advertising-wrap {
+				width: calc(100% + 27px);
+				margin: 8px -13.5px 16px;
+			}
+		}
+
+		section#bookmarks-tab {
+			section.competitions {
+				margin-bottom: 8px;
+
+				.competition-card {
+					margin-bottom: 8px;
+				}
+			}
+			section.posts {
+				margin-bottom: 8px;
+
+				.news-card {
+					margin-bottom: 8px;
+				}
+			}
+		}
+
+		section#friends-tab {
+			.participants-tab-top {
+				.search-participants {
+					form {
+						input {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		section#reviews-tab {
+			.reviews-container {
+				margin-top: 8px;
+
+				.review {
+					width: 100%;
+					position: relative;
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 16px;
+					padding: 8px 2.5px;
+
+					a.title {
+						color: $indigo;
+						display: block;
+						width: calc(100% - 80px);
+						float: left;
+					}
+
+					.category-and-time {
+						font-size: 11px;
+						line-height: 13px;
+						margin-top: 4px;
+						color: $black-50;
+						width: calc(100% - 80px);
+						float: left;
+					}
+
+					.place-and-date {
+						font-size: 11px;
+						line-height: 13px;
+						color: $black-50;
+						width: calc(100% - 80px);
+						float: left;
+
+						img {
+							display: inline-block;
+							width: 16.8px;
+						}
+					}
+
+					.rating {
+						display: inline-block;
+						text-align: right;
+
+						i {
+							font-size: 16px;
+							margin-left: -3px;
+						}
+					}
+
+					p {
+						float: left;
+						width: 100%;
+						position: relative;
+						margin: 4px 0 0;
+						overflow: hidden;
+
+						button.read-full {
+							color: $indigo;
+							padding: 1px 8px;
+							position: absolute;
+							right: -8px;
+							bottom: -1px;
+							background-color: #fff;
+							border: none;
+						}
+
+						&.full-height {
+							height: initial!important;
+
+							button.read-full {
+								display: none;
+							}
+						}
+					}
+				}
+
+				@include media-breakpoint-up(sm) {
+
+					.review {
+						font-size: 15px;
+						line-height: 18px;
+						padding: 8px 0;
+
+						a.title {
+							width: 100%;
+							float: none;
+						}
+
+						.place {
+							width: 100%;
+							font-size: 12px;
+
+							img {
+								display: inline-block;
+								width: 16.8px;
+							}
+						}
+
+						> time.date {
+							width: 100%;
+							display: block;
+							font-size: 12px;
+						}
+
+						.category-and-time {
+							width: 100%;
+							font-size: 15px;
+							margin-top: 8px;
+						}
+
+						.rating {
+							width: 100%;
+							text-align: left;
+							margin-top: 8px;
+
+							i {
+								font-size: 20px;
+								margin-left: 0;
+								margin-right: -2px;
+							}
+						}
+
+						p {
+							margin-top: 6px;
+						}
+
+						&:nth-child(2n) {
+							background-color: #F7F7F7;
+						}
+					}
+
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

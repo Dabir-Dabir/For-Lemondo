@@ -1,0 +1,359 @@
+// Carousel arrows
+.slick-slider {
+
+  .slick-dots {
+    list-style: none;
+    display: table;
+    margin: 20px auto;
+
+    li {
+      display: inline-block;
+
+      button {
+        color: transparent;
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        position: relative;
+        text-align: center;
+        border: none;
+        margin: 3px;
+
+        &:before {
+          font-size: 40px;
+          line-height: 20px;
+          position: absolute;
+          top: 6px;
+          left: 6px;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          content: '';
+          text-align: center;
+          background: rgba(63, 81, 181, 0.5);
+          @include transition(.2s);
+        }
+      }
+
+      &.slick-active {
+        button {
+          &:before {
+            background: rgba(63, 81, 181, 1);
+          }
+
+        }
+      }
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: calc(50% - 24px);
+    background-color: rgba(63, 81, 181, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    @include transition(.3s);
+    color: transparent;
+    border-radius: 50%;
+    z-index: 100;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.24), 0 0 8px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+
+    &.slick-prev {
+      left: -36.5px;
+
+      &:before {
+        content: url('../img/left.svg');
+        line-height: 48px;
+        vertical-align: middle;
+      }
+    }
+
+    &.slick-next {
+      right: -36.5px;
+
+      &:before {
+        content: url('../img/right.svg');
+        line-height: 48px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &:hover {
+    .slick-arrow {
+      opacity: 1;
+      visibility: visible;
+
+      &.slick-prev {
+        left: -11.5px;
+      }
+
+      &.slick-next {
+        right: -11.5px;
+      }
+    }
+  }
+}
+
+// /Carousel arrows
+
+// Sport Categories carousel
+#sport-categories-slider {
+  padding: 0;
+
+  a {
+    position: relative;
+    display: block;
+    margin: 10px 13.5px;
+    box-shadow: 0 1px 3px $black-50;
+    transition: .2s;
+
+    &:before {
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: #000;
+      transition: .2s;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    img {
+      margin: 0;
+      float: left;
+      width: 100%;
+    }
+
+    span {
+      position: absolute;
+      width: 100%;
+      height: 58px;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      font-size: 36px;
+      line-height: 58px;
+      padding-right: 11px;
+      text-align: right;
+      z-index: 2;
+      font-weight: 300;
+    }
+
+    &:hover {
+      box-shadow: 0 0 6px rgba(#000, .15), 0 6px 6px rgba(#000, .3);
+
+      &:before {
+        opacity: .2;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      span {
+        height: 35px;
+        line-height: 35px;
+        font-size: 24px;
+        padding-right: 14px;
+      }
+    }
+  }
+}
+
+// /Sport Categories carousel
+
+// Short about us carousel
+section.short-about-us {
+  width: 100%;
+  padding: 0;
+
+  @include media-breakpoint-down(md) {
+    .container {
+      max-width: 100%;
+    }
+  }
+
+  .short-about-us-carousel {
+    width: 100%;
+    margin-top: -10px;
+
+    a.item {
+      min-height: 127px;
+      padding: 16px;
+      margin: 10px 13.5px;
+      background: #fff;
+      display: flex;
+      text-decoration: none;
+      @include box-shadow(0, 1px, 3px, 0, $black-50);
+      @include transition(.2s);
+
+      .col-auto {
+        padding-left: 0;
+        padding-right: 16px;
+        padding-top: 5px;
+
+        img {
+          opacity: .7;
+          max-width: 64px;
+          max-height: 64px;
+          @include transition(.3s);
+          padding: 0;
+        }
+      }
+
+      p {
+        float: left;
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        line-height: 19px;
+        color: $black-70;
+
+        b {
+          font-weight: 500;
+        }
+      }
+
+      &.slick-active {
+        // margin-left: 50px;
+      }
+
+      &:hover {
+        box-shadow: 0 0 6px rgba(#000, .15), 0 6px 6px rgba(#000, .3);
+        text-decoration: none;
+
+        img {
+          opacity: 1;
+        }
+      }
+    }
+
+    ul.slick-dots {
+      margin: 6px auto 0;
+      height: 8px;
+      display: block;
+      text-align: center;
+
+      li {
+        height: 8px;
+        margin: 0 8px;
+
+        button {
+          width: 8px;
+          height: 8px;
+          padding: 0;
+          margin: 0;
+
+          &:before {
+            left: 0;
+            top: 0;
+            line-height: 8;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-top: -22px;
+
+    .short-about-us-carousel {
+
+      padding: 15px 0;
+
+      .slick-track {
+        margin-left: 0;
+      }
+
+      a.item {
+        width: 295px;
+        margin: 8px;
+        padding: 8px;
+        align-items: center;
+        min-height: 100px;
+
+        .col-auto {
+          padding-right: 8px;
+
+          img {
+            width: 48px;
+          }
+        }
+
+        p {
+          width: 220px;
+          font-size: 11px;
+          line-height: 14px;
+        }
+
+        &.slick-active {
+          margin-left: 8px;
+
+          img {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-between(sm, lg) {
+    .short-about-us-carousel {
+
+      a.item {
+        display: block;
+        min-height: 50px;
+
+        .col-auto {
+          width: 48px;
+          position: relative;
+          float: left;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        p {
+          float: left;
+          width: calc(100% - 50px);
+        }
+      }
+    }
+  }
+}
+
+// /Short about us carousel
+
+// Official Results Carousel
+.results-carousel {
+  padding: 0;
+
+  .official-result {
+    margin: 10px 13.5px;
+  }
+}
+
+// /Official Results Carousel
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

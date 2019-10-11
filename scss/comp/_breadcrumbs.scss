@@ -1,0 +1,32 @@
+
+.breadcrumbs {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 300;
+
+  ol {
+    list-style: none;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      color: $black-50;
+
+      a {
+        text-decoration: none;
+      }
+
+      &:not(:first-child) {
+        &:before {
+          content: '> ';
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 400;
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook_Color</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="event/user-results/run/share" transform="translate(-132.000000, -273.000000)">
+            <g id="share" transform="translate(132.000000, 267.000000)">
+                <g id="Facebook" transform="translate(0.000000, 6.000000)">
+                    <path d="M0,12 C0,5.37258267 5.37258267,0 12,0 C18.6274173,0 24,5.37258267 24,12 C24,18.6274173 18.6274173,24 12,24 C5.37258267,24 0,18.6274173 0,12 Z" id="back" fill="#3B5998"></path>
+                    <path d="M12.989738,19 L12.989738,12.4992389 L14.7647699,12.4992389 L15,10.2590406 L12.989738,10.2590406 L12.9927538,9.13779981 C12.9927538,8.55352159 13.0476659,8.24045198 13.8777566,8.24045198 L14.9874343,8.24045198 L14.9874343,6 L13.212151,6 C11.0797504,6 10.3292006,7.08673718 10.3292006,8.91428739 L10.3292006,10.2592943 L9,10.2592943 L9,12.4994926 L10.3292006,12.4994926 L10.3292006,19 L12.989738,19 Z" id="Shape" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

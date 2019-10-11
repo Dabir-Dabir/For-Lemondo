@@ -1,0 +1,15 @@
+
+.avatars-list {
+  margin: 0;
+}
+
+.avatars-list__item {
+  display: inline-block;
+  margin-right: -26px;
+}
+
+@include media-breakpoint-down(md) {
+  .avatars-list__item {
+    margin-right: -20px;
+  }
+}

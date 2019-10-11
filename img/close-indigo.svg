@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_close</title>
+    <desc>Created with Sketch.</desc>
+    <g id="admin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.704543341">
+        <g id="admin/protocols" transform="translate(-364.000000, -244.000000)">
+            <g id="new" transform="translate(82.000000, 189.000000)">
+                <g id="new-protocol" transform="translate(8.000000, 52.000000)">
+                    <g id="ic_close" transform="translate(271.000000, 0.000000)">
+                        <g id="Icon-24px">
+                            <polygon id="Shape" fill="#D0021B" points="12.6666667 4.27333333 11.7266667 3.33333333 8 7.06 4.27333333 3.33333333 3.33333333 4.27333333 7.06 8 3.33333333 11.7266667 4.27333333 12.6666667 8 8.94 11.7266667 12.6666667 12.6666667 11.7266667 8.94 8"></polygon>
+                            <polygon id="Shape" points="0 0 16 0 16 16 0 16"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

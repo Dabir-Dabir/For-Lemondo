@@ -1,0 +1,24 @@
+.page-subtitle-text {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 300;
+  margin: 0;
+
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+
+.block-title-text {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  margin: 0;
+
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}

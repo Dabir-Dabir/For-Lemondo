@@ -1,0 +1,59 @@
+.participants-and-checkin {
+  position: relative;
+  width: 191px;
+  margin-top: 8px;
+  margin-left: 23px;
+  display: inline-block;
+}
+
+
+.participant-and-checkin__checkin-button {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.participant-and-checkin__title {
+  margin-top: 16px;
+}
+
+.avatars-list {
+  margin-top: 12px;
+}
+
+.participant-and-checkin__participants-and-friends {
+  margin-top: 8px;
+}
+
+
+@include media-breakpoint-down(md) {
+
+  .participants-and-checkin {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .participant-and-checkin__checkin-button {
+    order: 3;
+    width: calc(50% - 13.5px);
+    margin-top: 8px;
+  }
+
+  .participant-and-checkin__title {
+    order: 1;
+    width: 100%;
+  }
+
+  .avatars-list {
+    order: 2;
+    width: 50%;
+    margin-top: 8px;
+  }
+
+  .participant-and-checkin__participants-and-friends {
+    order: 4;
+  }
+
+}

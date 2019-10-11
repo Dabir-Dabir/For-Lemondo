@@ -1,0 +1,129 @@
+body.search {
+	h1.page-title {
+		a {
+			font-size: 15px;
+			color: $black-50;
+			text-decoration: none;
+			vertical-align: top;
+			font-weight: 400;
+			line-height: 18px;
+			display: inline-block;
+			border-bottom: 1px dashed #979797;
+		}
+	}
+
+	.participants-container {
+		margin-top: 0;
+
+		.participant {
+			margin-top: 0;
+			margin-bottom: 8px;
+		}
+	}
+}
+
+body.search-posts main {
+	section.search-results-posts {
+		.col-sm-6.col-xl-4 {
+			margin-bottom: 8px;
+		}
+	}
+}
+
+body.search-results main {	
+
+	a.show-all {
+		font-size: 12px;
+		font-weight: 500;
+		display: block;
+		position: relative;
+		width: 176px;
+		left: calc(50% - 88px);
+		padding: 9px 0;
+		border-radius: 50px;
+		cursor: pointer;
+		color: #fff;
+		background-color: rgba(63, 81, 181, .3);
+		box-shadow: 0 1px 3px 0 $black-50;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+		@include transition(.2s);
+		z-index: 20;
+
+		&:hover {
+			background-color: rgba(63, 81, 181, 1);
+		}
+	}
+
+	section.search-results {
+		
+		section.search-results-events {
+			margin-bottom: 16px;
+
+			article.competition-card {
+				margin-bottom: 8px;
+			}
+
+			@include media-breakpoint-between(sm, lg) {
+				div:nth-child(4) {
+					display: none;
+				}
+			}
+		}
+
+		section.search-results-posts {
+			margin-bottom: 16px;
+
+			article.news-card {
+				margin-bottom: 8px;
+			}
+
+			@include media-breakpoint-between(sm, lg) {
+				div:nth-child(4) {
+					display: none!important;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

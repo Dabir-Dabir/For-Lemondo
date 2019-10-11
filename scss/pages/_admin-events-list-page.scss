@@ -1,0 +1,218 @@
+body.admin-events-list main {
+	.page-header {
+		margin-bottom: 16px;
+
+		.actions {
+			button {
+				background: none;
+				width: 30px;
+				height: 30px;
+				text-align: center;
+				padding: 0;
+				border: none;
+				margin-left: 5px;
+
+				i {
+					line-height: 30px;
+					vertical-align: middle;
+					font-size: 22px;
+				}
+
+				&.check, &.upload {
+					color: $indigo;
+				}
+
+				&.remove, &.file-alert, &.add {
+					color: $orange-red;
+				}
+
+				&.check, &.remove {
+					opacity: .3;
+					-webkit-transition: .2s;
+					-moz-transition: .2s;
+					-ms-transition: .2s;
+					-o-transition: .2s;
+					transition: .2s;
+					cursor: not-allowed;
+
+					&.active {
+						opacity: 1;
+						cursor: pointer;
+					}
+				}
+
+				&.remove {
+					margin-right: 30px;
+				}
+			}
+		}
+	}
+
+	section.events-list {
+		table {
+			width: 100%;
+			position: relative;
+
+			th {
+				font-weight: 400;
+
+				button {
+					padding: 0;
+					background: none;
+					border: none;
+					color: $indigo;
+				}
+			}
+
+			th, td {
+				padding: 5px 8px;
+				font-size: 12px;
+				line-height: 14px;
+			}
+
+			input[type=checkbox] {
+				display: none;
+
+				+ label {
+					position: relative;
+					margin-bottom: 0;
+					display: inline-block;
+					float: left;
+					clear: left;
+					cursor: pointer;
+
+					&:before {
+						content: '';
+						display: inline-block;
+						background: none;
+						width: 14px;
+						height: 14px;
+						border-radius: 2px;
+						border: 2px solid #010101;
+						text-align: center;
+						vertical-align: middle;
+						margin-right: 0;
+						opacity: .54;
+					}
+				}
+
+				&:checked + label:before {
+					background: url(../img/check-on.svg) no-repeat center;
+					background-size: contain;
+					border: none;
+					opacity: 1;
+				}
+			}
+
+			tr.even {
+				background-color: #F7F7F7;
+			}
+
+			tr.additional-info {
+
+				td {
+					padding-top: 0;
+					color: $black-50;
+					font-size: 10px;
+				}
+			}
+
+			.filter-col {
+				text-align: center;
+			}
+
+			.bookmark-col {
+				button {
+					width: 10px;
+					height: 16px;
+				}
+				svg {
+					width: 10px;
+					height: 16px;
+				}
+			}
+
+			.show-actions-col {
+				position: relative;
+
+				> button {
+					background: none;
+					border: none;
+					padding: 3px;
+					width: 20px;
+					text-align: center;
+				}
+				ul {
+					position: absolute;
+					top: 30px;
+					right: 10px;
+					background-color: #ffffff;
+					width: 135px;
+					box-shadow: 0 0 2px rgba(#000, .12), 0 2px 2px rgba(#000, .24);
+					z-index: 10;
+					font-size: 15px;
+					display: none;
+
+					&.show-actions-popup {
+						display: block;
+					}
+
+					li button {
+						padding: 8px;
+						width: 100%;
+						text-align: left;
+						background-color: #fff;
+						border: none;
+
+						&:hover {
+							background-color: #eeeeee;
+						}
+
+						i {
+							width: 20px;
+							font-size: 20px;
+							margin-right: 8px;
+							vertical-align: middle;
+							text-align: center;
+						}
+
+						&.copy-butt i,
+						&.watch-butt i,
+						&.protocol-butt i {
+							color: $indigo;
+						}
+
+						&.delete-butt i {
+							color: $orange-red;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

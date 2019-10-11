@@ -1,0 +1,44 @@
+.bookmark {
+  padding: 0;
+  align-self: flex-start;
+  background-color: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+
+  svg {
+    height: 20px;
+    line-height: 32px;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: visible;
+
+    path {
+      @include transition(.3s);
+      stroke-width: 2;
+      stroke: rgba(255, 87, 34, .3);
+      fill: transparent;
+    }
+  }
+
+  &.bookmarked {
+    svg {
+      path {
+        stroke: rgba(255, 87, 34, 1);
+        fill: rgba(255, 87, 34, 1);
+      }
+    }
+
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 25px;
+    height: 25px;
+
+    svg {
+      height: 21px;
+      line-height: 28px;
+    }
+  }
+}

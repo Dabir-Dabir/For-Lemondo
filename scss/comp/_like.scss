@@ -1,0 +1,62 @@
+
+// Like button
+.like {
+  padding: 0;
+  align-self: flex-start;
+  background-color: transparent;
+  border: none;
+  width: 36px;
+  height: 32px;
+  text-align: center;
+
+  svg {
+    width: 100%;
+    height: 29px;
+    line-height: 32px;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: visible;
+
+    path {
+      @include transition(.3s);
+      stroke-width: 3;
+      stroke: rgba(255, 87, 34, .3);
+      fill: transparent;
+    }
+  }
+
+  &.liked {
+    svg {
+      path {
+        stroke: #FFCCBC;
+        fill: #FFCCBC;
+      }
+    }
+
+  }
+
+  @include media-breakpoint-down(md) {
+    width: 26px;
+    height: 25px;
+
+    svg {
+      height: 22px;
+      line-height: 25px;
+
+      path {
+        stroke-width: 2px;
+      }
+    }
+  }
+}
+
+span.like-count {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  vertical-align: middle;
+  @include media-breakpoint-down(md) {
+    font-size: 15px;
+  }
+}

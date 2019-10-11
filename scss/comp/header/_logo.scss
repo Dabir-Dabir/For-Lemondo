@@ -1,0 +1,26 @@
+
+.logo {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.logo__item {
+  display: inline-block;
+  font-size: 46px;
+  color: #fff;
+  background: $french-blue;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@include media-breakpoint-down(md) {
+  .logo__item {
+    font-size: 36px;
+  }
+}

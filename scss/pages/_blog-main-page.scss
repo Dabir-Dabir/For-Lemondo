@@ -1,0 +1,98 @@
+body.blog-main main {
+  section.header-section {
+
+    .articles-and-teasers {
+      margin-top: 16px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: block;
+
+      .col-lg-8 {
+        float: left;
+      }
+
+      .advertising-wrap {
+        float: right;
+      }
+
+      .articles-and-teasers {
+        float: left;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      .col-lg-8 {
+        order: 1;
+      }
+
+      .advertising-wrap {
+        order: 3;
+        margin-top: 16px;
+      }
+
+      .articles-and-teasers {
+        order: 2;
+      }
+    }
+    @include media-breakpoint-down(md) {
+      .advertising-wrap {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  section.short-about-us {
+    margin-top: 16px;
+  }
+
+  section.news-block {
+    margin-top: 16px;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 0;
+      article.news-card {
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  > .container > .advertising-wrap {
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+
+  section.popular-races {
+    margin-bottom: 16px;
+
+    h3.section-title {
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+      margin-bottom: 8px;
+    }
+
+    .slick-list {
+      margin-top: -10px;
+      margin-bottom: -10px;
+
+      article {
+        margin: 10px 13.5px;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      h3.section-title {
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 300;
+      }
+
+      .slick-list {
+        article {
+          margin: 10px 8px;
+        }
+      }
+    }
+  }
+}

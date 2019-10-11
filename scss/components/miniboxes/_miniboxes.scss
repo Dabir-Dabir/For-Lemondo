@@ -1,0 +1,220 @@
+@import "event-minibox";
+
+// Minibox
+.link-article {
+  width: calc(100% - 30px);
+  height: 70px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  left: 15px;
+  background: #fff;
+  color: $black-70;
+  opacity: 0;
+  @include transition(opacity .3s);
+
+  img {
+    width: 64px;
+    float: left;
+  }
+
+  .content {
+    width: calc(100% - 64px);
+    height: 100%;
+    float: left;
+    font-size: 12px;
+    padding-left: 20px;
+    line-height: 1.2;
+
+    h5 {
+      font-size: 12px;
+      font-weight: 500;
+      width: 100%;
+      margin: 0;
+      line-height: 14px;
+    }
+
+    p {
+      width: 100%;
+      height: 56px;
+      line-height: 14px;
+      margin: 0;
+      overflow: hidden;
+    }
+  }
+}
+
+.link-competition {
+  width: calc(100% - 30px);
+  height: 64px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  left: 15px;
+  background: #fff;
+  color: $black-70;
+  opacity: 0;
+  @include transition(opacity .3s);
+
+  img {
+    width: 64px;
+    float: left;
+  }
+
+  .content {
+    width: calc(100% - 64px);
+    height: 100%;
+    float: left;
+    font-size: 12px;
+    padding-left: 20px;
+    line-height: 1.2;
+
+    h5 {
+      font-weight: 400;
+      margin: 0;
+      font-size: 12px;
+
+      img {
+        display: none;
+      }
+    }
+
+    .rating {
+      margin-top: 5px;
+      color: #ff8a65;
+
+      i {
+        font-size: 19px;
+      }
+    }
+
+    .views, .participants {
+      display: none;
+    }
+
+  }
+}
+
+.link-minibox {
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.mobile-minibox-carousel {
+  width: calc(100% + 30px) !important;
+  margin-left: -15px;
+  height: 100px;
+
+  a {
+    position: relative;
+    display: inline-block;
+    left: 0;
+    height: 64px;
+    padding: 0;
+    overflow: hidden;
+    background: #fff !important;
+    color: $black-70 !important;
+    margin: 8px;
+    @include box-shadow(0, 1px, 3px, 0, $black-50);
+
+    img {
+      width: 64px;
+      margin-left: -2px;
+      float: left;
+    }
+
+    .content {
+      width: calc(100% - 62px);
+      height: 100%;
+      float: left;
+      font-size: 12px;
+      padding-left: 15px;
+      line-height: 1.2;
+    }
+
+    &.article {
+
+      .content {
+
+        h5 {
+          font-size: 14px;
+          font-weight: 400;
+          width: 100%;
+          margin: 0;
+          line-height: 14px;
+        }
+
+        p {
+          width: 100%;
+          height: 56px;
+          font-weight: 400;
+          line-height: 13px;
+          margin: 10px 0 0;
+          overflow: hidden;
+          font-size: 11px;
+        }
+      }
+    }
+
+    &.competition {
+      .content {
+        position: relative;
+
+        h5.name {
+          font-weight: 400;
+          margin: 0;
+          font-size: 14px;
+        }
+
+        h5.place {
+          font-weight: 400;
+          margin: 7px 0 0;
+          font-size: 11px;
+
+          img {
+            width: 16px;
+            display: inline-block;
+            margin: 0 3px;
+          }
+        }
+
+        h5.category {
+          font-weight: 400;
+          margin: 0;
+          font-size: 11px;
+        }
+
+        .rating {
+          margin-top: 1px;
+          color: #ff8a65;
+
+          i {
+            font-size: 12px;
+          }
+        }
+
+        .views, .participants {
+          position: absolute;
+          right: 10px;
+          bottom: 20px;
+          width: 50px;
+          text-align: right;
+          font-size: 11px;
+
+          i {
+            font-size: 15px;
+            margin-bottom: 2px;
+            vertical-align: middle;
+          }
+        }
+
+        .participants {
+          bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+// Future competition miniboxes

@@ -1,0 +1,19 @@
+
+.action-button {
+  font-size: 15px;
+  padding: 9px 25px;
+  font-weight: 400;
+  @include box-shadow(0, 1px, 3px, 0, $black-50);
+  border-radius: 2px;
+  background: $orange-red;
+  color: rgba(#fff, .9);
+  text-decoration: none;
+  border: none;
+  text-transform: uppercase;
+}
+
+@include media-breakpoint-down(md) {
+  .action-button {
+    padding: 10px 12px;
+  }
+}

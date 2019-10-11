@@ -1,0 +1,171 @@
+body.admin-protocols main {
+
+  button.close-button {
+    color: $orange-red;
+  }
+
+  button.replay-button,
+  button.forward-button,
+  button.backward-button,
+  button.pause-button,
+  button.search__button,
+  button.edit-button,
+  button.download-button-file,
+  button.download-file {
+    color: $indigo;
+  }
+
+  i.hourglass {
+    color: $black-50;
+  }
+
+  i.done {
+    color: $green-200;
+  }
+
+  i.done-all {
+    color: $green;
+  }
+
+
+  .admin-p-filter {
+    text-align: left;
+    z-index: 10;
+    margin-bottom: 8px;
+
+    label {
+      font-size: 12px;
+    }
+
+    input {
+      padding: 5px;
+      width: 100%;
+      font-size: 15px;
+      text-align: left;
+      font-weight: 400;
+    }
+
+    .by-date {
+      .input-daterange {
+        text-align: left;
+        width: 100%;
+        position: relative;
+
+        .form-group {
+          width: 47%;
+          display: inline-block;
+          position: relative;
+
+          &:last-child {
+            margin-left: calc(6% - 4px);
+          }
+        }
+      }
+    }
+
+    input[type=submit] {
+      width: auto;
+      font-size: 15px;
+      text-transform: uppercase;
+      background-color: $indigo;
+      border-radius: 3px;
+      padding: 10px 15px;
+      color: rgba(#fff, .9);
+      cursor: pointer;
+    }
+  }
+
+  h2.section-title {
+    margin-bottom: 16px;
+  }
+
+  section.new-protocols {
+    h2.section-title {
+      width: calc(100% - 27px);
+      display: inline-block;
+    }
+
+    a.add-protocol {
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      padding: 0;
+      margin-left: -3px;
+      box-shadow: 0 1px 3px 0 $black-50;
+      border: none;
+      line-height: 28px;
+      vertical-align: middle;
+
+      i {
+        line-height: 24px;
+        font-size: 24px;
+        color: $orange-red;
+      }
+
+    }
+
+    button.load-more-protocols {
+      position: relative;
+      margin: 16px auto;
+      width: 176px;
+      padding: 9px 0;
+      font-size: 12px;
+      font-weight: 500;
+      border-radius: 50px;
+      z-index: 20;
+      cursor: pointer;
+      color: #fff;
+      background-color: rgba(63, 81, 181, .3);
+      text-align: center;
+      text-transform: uppercase;
+      display: block;
+      @include transition(.2s);
+
+      &:hover {
+        background-color: rgba(63, 81, 181, 1);
+      }
+    }
+  }
+}
+
+body.protocols-archive main,
+body.protocols-list main {
+  .protocol {
+
+    .right {
+      button {
+        padding: 0;
+        margin-top: 4px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.radio-wrap.used-events input {
+  text-decoration: line-through;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

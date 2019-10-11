@@ -1,0 +1,92 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background: #fff;
+  color: $black-70;
+  font-family: Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0;
+
+  @include media-breakpoint-down(md) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+*, *:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: $french-blue;
+}
+
+button, button:active {
+  cursor: pointer;
+  outline: none !important;
+}
+
+ul, ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+input, textarea {
+  border: none;
+  border-bottom: 1px solid rgba(#000, .1);
+  @include transition(.2s);
+
+  &::placeholder {
+    color: #000;
+    opacity: .3; /* Firefox */
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:focus {
+    border-bottom: 1px solid $indigo;
+
+    &::placeholder {
+      color: #000;
+      opacity: 0; /* Firefox */
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: rgba(0, 0, 0, 0);
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  &.set-time-output {
+    &::placeholder {
+      color: #000;
+      opacity: .7; /* Firefox */
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      color: rgba(0, 0, 0, 0.7);
+    }
+  }
+}
